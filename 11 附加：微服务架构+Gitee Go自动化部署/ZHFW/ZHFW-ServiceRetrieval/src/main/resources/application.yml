@@ -1,0 +1,11 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: eureka-retrieval-service
+  cloud:
+    discovery:
+      client:
+        service-url:
+          defaultZone: http://localhost:8761/eureka/

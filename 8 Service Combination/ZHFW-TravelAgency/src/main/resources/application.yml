@@ -1,0 +1,10 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: zhfw-travel-agency-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zhfw-eureka:8761/eureka/

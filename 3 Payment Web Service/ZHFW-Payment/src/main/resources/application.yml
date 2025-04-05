@@ -1,0 +1,10 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: zhfw-payment-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zhfw-eureka:8761/eureka/

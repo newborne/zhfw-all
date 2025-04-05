@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bank xmlns="http://www.example.org/bankDB">
+    <account>
+        <accountID>accone</accountID>
+        <amount>997</amount>
+    </account>
+    <account>
+        <accountID>acctwo</accountID>
+        <amount>497</amount>
+    </account>
+    <account>
+        <accountID>accthree</accountID>
+        <amount>6</amount>
+    </account>
+    <account>
+        <accountID>accfour</accountID>
+        <amount>100</amount>
+    </account>
+    <account>
+        <accountID>11111</accountID>
+        <amount>74289</amount>
+    </account>
+    <account>
+        <accountID>22222</accountID>
+        <amount>14552</amount>
+    </account>
+</bank>

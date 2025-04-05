@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: zhfw-warehouse-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zhfw-eureka:8761/eureka/

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/WeatherDB" xmlns:tns="http://www.example.org/WeatherDB" elementFormDefault="qualified">
+
+    <element name="weathers" type="tns:WeatherList"></element>
+
+    <complexType name="WeatherInfo">
+    	<sequence>
+    		<element name="date" type="tns:DateInfo" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="location" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="description" type="tns:WeatherType"
+    			maxOccurs="1" minOccurs="1">
+    		</element>
+    		<element name="temperature" type="double" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Date">
+    	<sequence>
+    		<element name="year" type="int"></element>
+    		<element name="month" type="int"></element>
+    		<element name="date" type="int"></element>
+    	</sequence>
+    </complexType>
+
+    <simpleType name="WeatherType">
+    	<restriction base="string">
+    		<enumeration value="sunny"></enumeration>
+    		<enumeration value="cloudy"></enumeration>
+    		<enumeration value="rainy"></enumeration>
+    		<enumeration value="snow"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="WeatherList">
+    	<sequence>
+    		<element name="weather" type="tns:WeatherInfo"
+    			maxOccurs="unbounded" minOccurs="1">
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>

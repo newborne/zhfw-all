@@ -1,0 +1,10 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: zhfw-flight-ticket-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zhfw-eureka:8761/eureka/

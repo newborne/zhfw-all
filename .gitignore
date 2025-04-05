@@ -1,0 +1,11 @@
+# JEnv local Java version configuration file
+.java-version
+
+# Used by previous versions of JEnv
+.jenv-version
+
+target
+*.jar
+*.out
+*.gz
+.idea

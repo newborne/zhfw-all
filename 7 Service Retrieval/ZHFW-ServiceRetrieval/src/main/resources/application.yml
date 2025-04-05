@@ -1,0 +1,10 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: eureka-retrieval-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zhfw-eureka:8761/eureka/

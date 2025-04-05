@@ -1,0 +1,67 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: zhfw-book-store-service
+          uri: lb://zhfw-book-store-service
+          predicates:
+            - Path=/books/**
+#          filters:
+#            - StripPrefix=1
+        - id: zhfw-warehouse-service
+          uri: lb://zhfw-warehouse-service
+          predicates:
+            - Path=/warehouse/**
+#          filters:
+#            - StripPrefix=1
+        - id: zhfw-flight-ticket-service
+          uri: lb://zhfw-flight-ticket-service
+          predicates:
+            - Path=/flight/**
+#          filters:
+#            - StripPrefix=1
+        - id: zhfw-hotel-reservation-service
+          uri: lb://zhfw-hotel-reservation-service
+          predicates:
+            - Path=/hotel/**
+#          filters:
+#            - StripPrefix=1
+        - id: zhfw-payment-service
+          uri: lb://zhfw-payment-service
+          predicates:
+            - Path=/payment/**
+#          filters:
+#            - StripPrefix=1
+        - id: eureka-retrieval-service
+          uri: lb://eureka-retrieval-service
+          predicates:
+            - Path=/service/**
+#          filters:
+#            - StripPrefix=1
+        - id: zhfw-weather-service
+          uri: lb://zhfw-weather-service
+          predicates:
+            - Path=/weather/**
+#          filters:
+#            - StripPrefix=1
+        - id: zhfw-travel-agency-service
+          uri: lb://zhfw-travel-agency-service
+          predicates:
+            - Path=/travel/**
+#          filters:
+#            - StripPrefix=1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

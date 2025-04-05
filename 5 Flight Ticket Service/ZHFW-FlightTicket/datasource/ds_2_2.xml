@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<warehouse xmlns="http://www.example.org/warehouse">
+    <items>
+        <item>
+            <resourceID>residone</resourceID>
+            <amount>9</amount>
+        </item>
+        <item>
+            <resourceID>residtwo</resourceID>
+            <amount>5</amount>
+        </item>
+        <item>
+            <resourceID>bilbao-guideline</resourceID>
+            <amount>80</amount>
+        </item>
+        <item>
+            <resourceID>vienna-guideline</resourceID>
+            <amount>76</amount>
+        </item>
+        <item>
+            <resourceID>residthree</resourceID>
+            <amount>3</amount>
+        </item>
+    </items>
+    <holdingReques>
+        <request>
+            <requestID>reqidone</requestID>
+            <item>
+                <resourceID>residone</resourceID>
+                <amount>3</amount>
+            </item>
+        </request>
+        <request>
+            <requestID>regidtwo</requestID>
+            <item>
+                <resourceID>residtwo</resourceID>
+                <amount>3</amount>
+            </item>
+        </request>
+        <request>
+            <requestID>regidthree</requestID>
+            <item>
+                <resourceID>residtwo</resourceID>
+                <amount>8</amount>
+            </item>
+        </request>
+    </holdingReques>
+</warehouse>
+
+

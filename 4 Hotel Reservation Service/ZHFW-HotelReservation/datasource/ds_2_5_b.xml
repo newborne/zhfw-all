@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flig:tickets xmlns:flig="http://www.example.org/FlightDB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/FlightDB ../ZHFW-FlightTicket/src/main/resources/FlightDB.xsd">
+    <flig:airlines>
+        <flig:airline>
+            <flig:flightNo>flightone</flig:flightNo>
+            <flig:departure>Bilbao</flig:departure>
+            <flig:destination>Vienna</flig:destination>
+            <flig:seats>65</flig:seats>
+            <flig:price>180</flig:price>
+            <flig:dates>
+                <flig:date>Monday</flig:date>
+                <flig:date>Tuesday</flig:date>
+                <flig:date>Sunday</flig:date>
+            </flig:dates>
+        </flig:airline>
+        <flig:airline>
+            <flig:flightNo>flighttwo</flig:flightNo>
+            <flig:departure>Vienna</flig:departure>
+            <flig:destination>Bilbao</flig:destination>
+            <flig:seats>65</flig:seats>
+            <flig:price>180</flig:price>
+            <flig:dates>
+                <flig:date>Wednesday</flig:date>
+                <flig:date>Thursday</flig:date>
+                <flig:date>Friday</flig:date>
+            </flig:dates>
+        </flig:airline>
+    </flig:airlines>
+    <flig:bookings>
+        <flig:booking>
+            <flig:bookingID>bookingone</flig:bookingID>
+            <flig:flightNo>flightone</flig:flightNo>
+            <flig:seats>3</flig:seats>
+            <flig:date>Sunday</flig:date>
+        </flig:booking>
+        <flig:booking>
+            <flig:bookingID>e4b99297-ab48-47cc-90d3-3a1566eadcce</flig:bookingID>
+            <flig:flightNo>flightone</flig:flightNo>
+            <flig:seats>60</flig:seats>
+            <flig:date>Tuesday</flig:date>
+        </flig:booking>
+    </flig:bookings>
+</flig:tickets>

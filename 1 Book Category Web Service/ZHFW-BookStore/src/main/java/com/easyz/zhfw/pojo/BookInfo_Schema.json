@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BookInfo",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "title of the book"
+    },
+    "resourceID": {
+      "type": "string",
+      "description": "unique key of the book in stock"
+    },
+    "ISBN13": {
+      "type": "string",
+      "description": "ISBN13 encoding of the book"
+    },
+    "ISBN10": {
+      "type": "string",
+      "description": "ISBN10 encoding of the book"
+    },
+    "authors": {
+      "$ref": "#/definitions/AuthorsInfo",
+      "description": "Authors of the book"
+    },
+    "pageNum": {
+      "type": "integer",
+      "description": "page number of the book"
+    },
+    "publisher": {
+      "type": "string",
+      "description": "publisher of the book"
+    },
+    "publishdate": {
+      "type": "string",
+      "description": "publishing date of the book"
+    },
+    "version": {
+      "type": "string",
+      "description": "version of the book"
+    },
+    "price": {
+      "type": "number",
+      "description": "price of the book"
+    }
+  },
+  "required": [
+    "title",
+    "resourceID",
+    "ISBN13",
+    "ISBN10",
+    "authors",
+    "pageNum",
+    "publisher",
+    "publishdate",
+    "version",
+    "price"
+  ],
+  "definitions": {
+    "AuthorsInfo": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "bio": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "bio"
+      ]
+    }
+  }
+}
